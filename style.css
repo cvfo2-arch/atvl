@@ -18,28 +18,33 @@
     width: 9%;
 }
 
+
 .icone-categoria {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: bold;
     border: 1px solid #999;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 4px;
+    padding: 5px;
 }
 
+
 .icone-beneficio {
-    font-size: 8px;
+    font-size: 9px;
     font-weight: bold;
     border: 1px solid #777;
-    border-radius: 50%;
-    width: 38px;
+    border-radius: 3px;
+    min-width: 65px;
     height: 38px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
+
