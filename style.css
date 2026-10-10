@@ -1,387 +1,45 @@
 
-/* CSS básico da loja Óculos Maneiros */
-
-body {
-    font-family: Arial, sans-serif;
+.seta-carousel {
     color: #222;
-    margin: 0;
-}
-
-/* Faixa de aviso */
-.aviso {
-    background: #eeeeee;
-    border-bottom: 1px solid #ccc;
-    font-size: 12px;
-    padding: 5px;
-}
-
-/* Menu */
-.navbar {
-    border-bottom: 1px solid #ddd;
-    background: white;
-}
-
-.logo {
-    font-size: 13px;
-    font-weight: bold;
-    border: 1px solid #aaa;
-    padding: 5px 12px;
-    line-height: 1.1;
-}
-
-.nav-link {
-    font-size: 13px;
-}
-
-.busca {
-    flex: 1;
-    max-width: 430px;
-}
-
-.busca .btn {
-    margin-left: 5px;
-}
-
-.carrinho {
-    color: #222;
-    text-decoration: none;
-    margin-left: 15px;
-    white-space: nowrap;
-}
-
-.acoes-celular,
-.busca-celular {
-    display: none;
-}
-
-/* Carrossel */
-.carrossel-area {
-    margin-top: 15px;
-}
-
-.slide {
-    min-height: 250px;
-    padding: 45px 12%;
-    display: flex;
-    align-items: center;
-    color: white;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.slide p,
-.slide small {
-    text-shadow: 1px 1px 3px #000;
-}
-
-.slide-1 {
-    background-image: linear-gradient(90deg, #111c, #1112),
-    url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=80");
-}
-
-.slide-2 {
-    background-image: linear-gradient(90deg, #111c, #1112),
-    url("https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=1400&q=80");
-}
-
-.slide-3 {
-    background-image: linear-gradient(90deg, #111c, #1112),
-    url("https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1400&q=80");
-}
-
-/* Seções */
-.secao {
-    margin-top: 24px;
-}
-
-.secao h2,
-.newsletter h2 {
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Categorias */
-.categoria {
-    border: 1px solid #bbb;
-    border-radius: 4px;
-    min-height: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #222;
-    font-size: 11px;
-    text-align: center;
-    padding: 5px 2px;
-}
-
-.categoria span {
-    font-size: 22px;
-    margin-bottom: 3px;
-}
-
-/* Título dos destaques */
-.titulo-linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.titulo-linha a {
-    color: #555;
-    font-size: 12px;
-}
-
-/* Cartões dos produtos */
-.produto {
-    position: relative;
-    border: 1px solid #bbb;
-    border-radius: 4px;
-}
-
-.produto img {
-    height: 150px;
-    object-fit: cover;
-}
-
-.produto .card-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.produto h3 {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.produto p {
-    font-size: 12px;
-    color: #555;
-    flex-grow: 1;
-}
-
-.produto del {
-    font-size: 10px;
-    color: #888;
-}
-
-.preco {
-    display: block;
-    font-size: 14px;
-}
-
-.produto .btn {
-    font-size: 11px;
-    padding: 5px;
-}
-
-/* Etiqueta de promoção */
-.promocao {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background: #777;
-    z-index: 1;
-}
-
-/* Banners promocionais */
-.banners-promocionais {
-    margin-top: 22px;
-}
-
-.banner-menor {
-    min-height: 125px;
-    padding: 25px;
-    border: 1px solid #bbb;
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.banner-menor span {
-    font-size: 10px;
-    background: #222;
-    padding: 3px 6px;
-}
-
-.banner-menor h2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 12px;
-    text-shadow: 1px 1px 3px #000;
-}
-
-.banner-a {
-    background-image: linear-gradient(90deg, #111b, #1114),
-    url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80");
-}
-
-.banner-b {
-    background-image: linear-gradient(90deg, #111b, #1114),
-    url("https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=900&q=80");
-}
-
-/* Benefícios */
-.beneficios {
-    margin-top: 18px;
-    background: #eee;
-    padding: 15px 5px;
-}
-
-.beneficio {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #777;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
-    font-size: 11px;
+    font-size: 16px;
 }
 
-.beneficio span {
-    font-size: 23px;
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    width: 9%;
 }
 
-.beneficio small {
-    display: block;
-    color: #666;
-}
-
-/* Newsletter */
-.newsletter {
-    padding: 25px 0;
-}
-
-.newsletter .input-group {
-    max-width: 430px;
-}
-
-.newsletter h2 {
-    margin-bottom: 12px;
-}
-
-/* Rodapé */
-.rodape {
-    background: #ddd;
-    padding: 20px 0 8px;
-    font-size: 12px;
-}
-
-.rodape h3 {
-    font-size: 13px;
+.icone-categoria {
+    font-size: 9px;
     font-weight: bold;
-}
-
-.rodape a {
-    display: block;
-    color: #555;
-    margin-bottom: 5px;
-    text-decoration: none;
-}
-
-.rodape p {
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 4px;
 }
 
-.copyright {
-    font-size: 10px;
-    color: #555;
-    margin-bottom: 0;
-}
-
-/* Ajustes para celular */
-@media (max-width: 575px) {
-
-    .navbar .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* Logo, carrinho e menu hambúrguer */
-    .acoes-celular {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-left: auto;
-    }
-
-    .desktop-carrinho,
-    .navbar-collapse .busca {
-        display: none;
-    }
-
-    /* Busca em linha separada */
-    .busca-celular {
-        display: block;
-        margin-top: 8px;
-    }
-
-    /* Carrossel menor */
-    .slide {
-        min-height: 145px;
-        padding: 25px 12%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .slide h1 {
-        font-size: 22px;
-    }
-
-    .slide p {
-        font-size: 11px;
-        margin-bottom: 0;
-    }
-
-    .slide small {
-        font-size: 9px;
-    }
-
-    /* Categorias em três colunas */
-    .categoria {
-        min-height: 65px;
-        font-size: 10px;
-    }
-
-    .categoria span {
-        font-size: 18px;
-    }
-
-    /* Um produto por linha */
-    .produto img {
-        height: 180px;
-    }
-
-    .banner-menor {
-        min-height: 90px;
-        padding: 15px;
-    }
-
-    .banner-menor h2 {
-        font-size: 18px;
-        margin-bottom: 0;
-    }
-
-    /* Benefícios empilhados */
-    .beneficio {
-        justify-content: flex-start;
-        text-align: left;
-        padding: 5px 10px;
-    }
-
-    .beneficio span {
-        width: 30px;
-    }
-
-    /* Rodapé em blocos */
-    .rodape .col-12 {
-        border-bottom: 1px solid #c5c5c5;
-        padding-bottom: 10px;
-    }
+.icone-beneficio {
+    font-size: 8px;
+    font-weight: bold;
+    border: 1px solid #777;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
