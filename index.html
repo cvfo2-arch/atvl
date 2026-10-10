@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Óculos Maneirexx</title>
 
-   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
+</head>
+<body>
 
-   
     <div class="aviso text-center">
-        Frete grátis acima de R$ 199
+        Frete grátis acima de R$ 999
     </div>
 
-   <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand logo" href="#">ÓCULOS<br>MANEIREXX</a>
+            <a class="navbar-brand logo" href="#">
+                ÓCULOS<br>MANEIREXX
+            </a>
 
             <div class="acoes-celular">
-                <a class="carrinho" href="#destaques">🛒 <span class="badge bg-dark">0</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <a class="carrinho" href="#destaques">
+                    Carrinho <span class="badge bg-dark">0</span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categorias</a>
+                        <a class="nav-link dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Categorias</a>
+
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#categorias">Óculos de sol</a></li>
                             <li><a class="dropdown-item" href="#categorias">Armações</a></li>
@@ -41,41 +49,46 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link" href="#destaques">Ofertas</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destaques">Ofertas</a>
+                    </li>
                 </ul>
 
                 <form class="busca d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Buscar produtos...">
+                    <input class="form-control" type="search"
+                        placeholder="Buscar produtos...">
                     <button class="btn btn-dark" type="submit">Buscar</button>
                 </form>
 
                 <a class="carrinho desktop-carrinho" href="#destaques">
-                    🛒 <span class="badge bg-dark">0</span>
+                    Carrinho <span class="badge bg-dark">0</span>
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Busca em uma linha própria no celular -->
     <div class="busca-celular container">
         <form class="d-flex" role="search">
-            <input class="form-control" type="search" placeholder="Buscar produtos...">
-            <button class="btn btn-dark" type="submit">⌕</button>
+            <input class="form-control" type="search"
+                placeholder="Buscar produtos...">
+            <button class="btn btn-dark" type="submit">Buscar</button>
         </form>
     </div>
 
     <main class="container">
 
-        <!-- Carrossel com três banners -->
+        <!-- CARROSSEL -->
         <section class="carrossel-area">
-            <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carrossel" class="carousel slide"
+                data-bs-ride="carousel">
 
                 <div class="carousel-inner">
+
                     <div class="carousel-item active">
                         <div class="slide slide-1">
                             <div>
-                                <small>ÓCULOS MANEIROS APRESENTA</small>
-                                <h1>Veja bem.<br>Veja maneiro.</h1>
+                                <small>ÓCULOS MANEIREXX APRESENTA</small>
+                                <h1>Maneirexx 1</h1>
                                 <p>Estilo para olhar a vida sem cara de segunda-feira.</p>
                             </div>
                         </div>
@@ -85,7 +98,7 @@
                         <div class="slide slide-2">
                             <div>
                                 <small>COLEÇÃO NOVA</small>
-                                <h1>Seu rosto,<br>suas regras.</h1>
+                                <h1>Maneirexx 2</h1>
                                 <p>Óculos com personalidade. A sua, de preferência.</p>
                             </div>
                         </div>
@@ -95,61 +108,94 @@
                         <div class="slide slide-3">
                             <div>
                                 <small>OFERTAS</small>
-                                <h1>Olhar de milhões.<br>Preço possível.</h1>
+                                <h1>Maneirexx 3</h1>
                                 <p>Seu bolso não precisa ficar de olhos arregalados.</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <!-- SETA PARA VOLTAR -->
+                <button class="carousel-control-prev"
+                    type="button" data-bs-target="#carrossel"
+                    data-bs-slide="prev" aria-label="Banner anterior">
+
+                    <span class="seta-carousel" aria-hidden="true">&#10094;</span>
                 </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <!-- SETA PARA AVANÇAR -->
+                <button class="carousel-control-next"
+                    type="button" data-bs-target="#carrossel"
+                    data-bs-slide="next" aria-label="Próximo banner">
+
+                    <span class="seta-carousel" aria-hidden="true">&#10095;</span>
                 </button>
 
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carrossel"
+                        data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrossel"
+                        data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrossel"
+                        data-bs-slide-to="2"></button>
                 </div>
+
             </div>
         </section>
 
-        <!-- Categorias: 6 no computador e 3 por linha no celular -->
+        <!-- CATEGORIAS -->
         <section id="categorias" class="secao">
             <h2>Categorias</h2>
 
             <div class="row g-2">
+
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>🕶️</span><b>Óculos de sol</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">SOL</span>
+                        <b>Óculos de sol</b>
+                    </a>
                 </div>
 
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>🤓</span><b>Armações</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">ARMAÇÃO</span>
+                        <b>Armações</b>
+                    </a>
                 </div>
 
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>⭐</span><b>Estilosos</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">TOP</span>
+                        <b>Estilosos</b>
+                    </a>
                 </div>
 
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>🌈</span><b>Coloridos</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">COR</span>
+                        <b>Coloridos</b>
+                    </a>
                 </div>
 
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>🖤</span><b>Clássicos</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">BÁSICO</span>
+                        <b>Clássicos</b>
+                    </a>
                 </div>
 
                 <div class="col-4 col-lg-2">
-                    <a class="categoria" href="#destaques"><span>👽</span><b>Diferentões</b></a>
+                    <a class="categoria" href="#destaques">
+                        <span class="icone-categoria">EXTRA</span>
+                        <b>Diferentões</b>
+                    </a>
                 </div>
+
             </div>
         </section>
 
-        <!-- Destaques: 4 por linha no computador -->
+        <!-- PRODUTOS EM DESTAQUE -->
         <section id="destaques" class="secao">
 
             <div class="titulo-linha">
@@ -159,84 +205,88 @@
 
             <div class="row g-3">
 
-                <!-- Produto 1 -->
+                <!-- PRODUTO 1 -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card produto h-100">
                         <span class="badge promocao">Promoção</span>
 
                         <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80"
-                             class="card-img-top" alt="Óculos escuros">
+                            class="card-img-top" alt="Óculos Maneirexx 1">
 
                         <div class="card-body">
-                            <h3>O Misterioso</h3>
+                            <h3>Maneirexx 1</h3>
                             <p>Para esconder as olheiras e os spoilers da sua cara.</p>
                             <del>R$ 149,90</del>
                             <strong class="preco">R$ 99,90</strong>
 
-                            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <button class="btn btn-dark mt-2"
+                                data-bs-toggle="modal" data-bs-target="#modal1">
                                 Adicionar ao carrinho
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Produto 2 -->
+                <!-- PRODUTO 2 -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card produto h-100">
                         <span class="badge promocao">Promoção</span>
 
                         <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=600&q=80"
-                             class="card-img-top" alt="Armação de óculos">
+                            class="card-img-top" alt="Óculos Maneirexx 2">
 
                         <div class="card-body">
-                            <h3>O Intelectual</h3>
+                            <h3>Maneirexx 2</h3>
                             <p>Não faz a tarefa, mas parece que você sabe a matéria.</p>
                             <del>R$ 129,90</del>
                             <strong class="preco">R$ 89,90</strong>
 
-                            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modal2">
+                            <button class="btn btn-dark mt-2"
+                                data-bs-toggle="modal" data-bs-target="#modal2">
                                 Adicionar ao carrinho
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Produto 3 -->
+                <!-- PRODUTO 3 -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card produto h-100">
                         <span class="badge promocao">Promoção</span>
 
                         <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=600&q=80"
-                             class="card-img-top" alt="Óculos moderno">
+                            class="card-img-top" alt="Óculos Maneirexx 3">
 
                         <div class="card-body">
-                            <h3>O Protagonista</h3>
+                            <h3>Maneirexx 3</h3>
                             <p>Ideal para chegar atrasado como se fosse uma entrada triunfal.</p>
                             <del>R$ 159,90</del>
                             <strong class="preco">R$ 119,90</strong>
 
-                            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <button class="btn btn-dark mt-2"
+                                data-bs-toggle="modal" data-bs-target="#modal3">
                                 Adicionar ao carrinho
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Produto 4 -->
+                <!-- PRODUTO 4 -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card produto h-100">
                         <span class="badge promocao">Promoção</span>
 
                         <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"
-                             class="card-img-top" alt="Pessoa usando óculos">
+                            class="card-img-top" alt="Óculos Maneirexx 4">
 
                         <div class="card-body">
-                            <h3>O Sem Limites</h3>
+                            <h3>Maneirexx 4</h3>
                             <p>Combina com tudo, menos com dormir usando ele.</p>
                             <del>R$ 139,90</del>
                             <strong class="preco">R$ 109,90</strong>
 
-                            <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modal4">
+                            <button class="btn btn-dark mt-2"
+                                data-bs-toggle="modal" data-bs-target="#modal4">
                                 Adicionar ao carrinho
                             </button>
                         </div>
@@ -246,12 +296,12 @@
             </div>
         </section>
 
-        <!-- Janelas de detalhes dos produtos -->
+        <!-- DETALHES DOS PRODUTOS -->
         <div class="modal fade" id="modal1" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5>O Misterioso</h5>
+                        <h5>Maneirexx 1</h5>
                         <button class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -265,7 +315,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5>O Intelectual</h5>
+                        <h5>Maneirexx 2</h5>
                         <button class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -279,7 +329,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5>O Protagonista</h5>
+                        <h5>Maneirexx 3</h5>
                         <button class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -293,7 +343,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5>O Sem Limites</h5>
+                        <h5>Maneirexx 4</h5>
                         <button class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -303,7 +353,7 @@
             </div>
         </div>
 
-        <!-- Dois banners promocionais -->
+        <!-- BANNERS PROMOCIONAIS -->
         <section class="row g-3 banners-promocionais">
             <div class="col-md-6">
                 <div class="banner-menor banner-a">
@@ -320,43 +370,55 @@
             </div>
         </section>
 
-        <!-- Três benefícios -->
+        <!-- BENEFÍCIOS SEM EMOJIS -->
         <section class="row beneficios text-center">
+
             <div class="col-12 col-md-4">
                 <div class="beneficio">
-                    <span>🚚</span>
-                    <div><b>Entrega para todo o Brasil</b><small>Até onde o carteiro alcançar.</small></div>
+                    <span class="icone-beneficio">ENTREGA</span>
+                    <div>
+                        <b>Entrega para todo o Brasil</b>
+                        <small>Até onde o carteiro alcançar.</small>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4">
                 <div class="beneficio">
-                    <span>🔒</span>
-                    <div><b>Pagamento seguro</b><small>Seus dados não são fofoca.</small></div>
+                    <span class="icone-beneficio">SEGURO</span>
+                    <div>
+                        <b>Pagamento seguro</b>
+                        <small>Seus dados não são fofoca.</small>
+                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4">
                 <div class="beneficio">
-                    <span>↩️</span>
-                    <div><b>Troca grátis em 30 dias</b><small>Arrependimento fashion existe.</small></div>
+                    <span class="icone-beneficio">TROCA</span>
+                    <div>
+                        <b>Troca grátis em 30 dias</b>
+                        <small>Arrependimento fashion existe.</small>
+                    </div>
                 </div>
             </div>
+
         </section>
 
-        <!-- Newsletter -->
+        <!-- NEWSLETTER -->
         <section class="newsletter text-center">
             <h2>Receba nossas ofertas</h2>
 
             <form class="input-group mx-auto">
-                <input type="email" class="form-control" placeholder="seu e-mail" required>
+                <input type="email" class="form-control"
+                    placeholder="seu e-mail" required>
                 <button class="btn btn-dark" type="submit">Assinar</button>
             </form>
         </section>
 
     </main>
 
-    <!-- Rodapé -->
+    <!-- RODAPÉ -->
     <footer class="rodape">
         <div class="container">
             <div class="row g-3">
@@ -377,26 +439,28 @@
 
                 <div class="col-12 col-md-3">
                     <h3>Redes sociais</h3>
-                    <p>◎ Instagram</p>
-                    <p>▶ YouTube</p>
-                    <p>♪ TikTok</p>
+                    <p>Instagram</p>
+                    <p>YouTube</p>
+                    <p>TikTok</p>
                 </div>
 
                 <div class="col-12 col-md-3">
                     <h3>Formas de pagamento</h3>
-                    <p>▭ Cartão</p>
-                    <p>⚡ Pix</p>
-                    <p>▤ Boleto</p>
+                    <p>Cartão</p>
+                    <p>Pix</p>
+                    <p>Boleto</p>
                 </div>
 
             </div>
 
             <hr>
-            <p class="copyright text-center">© 2026 Óculos Maneiros — CNPJ 00.000.000/0000-00</p>
+            <p class="copyright text-center">
+                © 2026 Óculos Maneirexx — CNPJ 00.000.000/0000-00
+            </p>
         </div>
     </footer>
 
-    <!-- JavaScript do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
